@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link_app</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav id="nav">
+     <div class="container" id="navContainer">
+        <h1 class="nav-header">Link saver</h1>
+        <a id="addButton">+</a>
+     </div>
+    </nav>
+    <div class="container">
+      <div class="panel hidden" id="addLinkPanel">
+        <h3 class="panel-heading">Add link</h3>
+        <form id="addLinkForm">
+            <input type="text" name="title" id="linkTitle" class="form-control" placeholder="Title">
+            <input type="text" name="url" id="linkUrl" class="form-control" placeholder="Title">
+            <input type="text" name="category" id="linkCategory" class="form-control" placeholder="Categories (comma separated)">
+
+            <div class="addedcategories"></div>
+            <input type="submit" id="submitButton" value="submit">
+            <input type="submit" id="cancelButton" value="cancel">
+            
+        </form>
+
+      </div>
+      <div id="linkList"></div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
